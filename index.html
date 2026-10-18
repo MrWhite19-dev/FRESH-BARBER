@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101410">
+  <meta name="description" content="Fresh Barber Angré — coupes homme, dégradés, barbe et soins à Angré, Abidjan.">
+  <title>Fresh Barber Angré | Le style au millimètre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline"><span class="status-dot"></span> ANGRÉ, ABIDJAN <span class="topline-sep">•</span> LE STYLE AU MILLIMÈTRE</div>
+  <header class="header">
+    <a class="brand" href="#accueil" aria-label="Fresh Barber, accueil">
+      <span class="brand-mark">FB<span>✦</span></span>
+      <span class="brand-name">FRESH <b>BARBER</b><small>ANGRÉ · ABIDJAN</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" id="mainNav">
+      <a href="#accueil">Accueil</a><a href="#prestations">Prestations</a><a href="#boutique">Nos services</a><a href="#contact">Contact</a>
+      <button class="nav-action" id="openCartNav">Panier <span class="count" id="cartCountNav">0</span></button>
+      <button class="nav-action favorite-nav" id="openFavoritesNav">Favoris <span class="count" id="favCountNav">0</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> BARBER SHOP · ANGRÉ</p>
+        <h1>TON STYLE.<br><em>TES RÈGLES.</em></h1>
+        <p class="hero-text">Une coupe nette, une barbe précise et une expérience qui fait la différence. Installe-toi, on s’occupe du reste.</p>
+        <div class="hero-buttons"><a class="btn btn-primary" href="#prestations">Découvrir les prestations <span>↗</span></a><a class="btn btn-outline" href="#contact">Nous contacter</a></div>
+        <div class="hero-proof"><div class="stars">★★★★★</div><strong>4,8/5</strong><span>· 51 avis communiqués</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image"></div><div class="image-stamp"><span>FRESH</span><b>FADE</b><small>PRECISION CUTS</small></div>
+        <div class="hero-note"><span class="note-line"></span><span>PRÉCISION<br> & ATTITUDE</span></div>
+      </div>
+      <div class="hero-bottom"><span>01 — COUPE</span><span>02 — BARBE</span><span>03 — FINITIONS</span><span class="scroll-note">FAIS DÉFILER ↓</span></div>
+    </section>
+
+    <section class="intro section-wrap" id="prestations">
+      <div><p class="eyebrow">L’ART DU BARBIER</p><h2>PLUS QU’UNE COUPE.<br><em>UNE SIGNATURE.</em></h2></div>
+      <p class="intro-copy">Du dégradé impeccable aux contours parfaitement dessinés, chaque détail compte. Choisis ta prestation, ajoute-la au panier et envoie ta demande directement sur WhatsApp.</p>
+    </section>
+
+    <section class="services section-wrap" id="boutique">
+      <div class="section-heading"><div><p class="eyebrow">CHOISIS TON STYLE</p><h2>NOS <em>PRESTATIONS</em></h2></div><p class="section-hint">Ajoute tes prestations au panier<br>ou garde tes préférées en favoris.</p></div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-id="fade" data-name="Dégradé Fresh" data-price="3000" data-category="Coupe">
+          <div class="product-photo photo-fade"><span class="product-tag">POPULAIRE</span><button class="heart-btn" aria-label="Ajouter Dégradé Fresh aux favoris" data-fav="fade">♡</button><span class="photo-number">01</span></div>
+          <div class="product-info"><div class="product-type">COUPE · FINITIONS</div><h3>Dégradé Fresh</h3><p>Un fondu propre, des contours précis et une finition soignée.</p><div class="product-bottom"><strong>3 000 <small>FCFA</small></strong><button class="add-btn" data-add="fade">+ Ajouter</button></div></div>
+        </article>
+        <article class="product-card" data-id="classic" data-name="Coupe classique" data-price="2500" data-category="Coupe">
+          <div class="product-photo photo-classic"><button class="heart-btn" aria-label="Ajouter Coupe classique aux favoris" data-fav="classic">♡</button><span class="photo-number">02</span></div>
+          <div class="product-info"><div class="product-type">COUPE · CLASSIQUE</div><h3>Coupe classique</h3><p>Un look propre et intemporel adapté à ton style.</p><div class="product-bottom"><strong>2 500 <small>FCFA</small></strong><button class="add-btn" data-add="classic">+ Ajouter</button></div></div>
+        </article>
+        <article class="product-card" data-id="beard" data-name="Taille de barbe" data-price="1500" data-category="Barbe">
+          <div class="product-photo photo-beard"><span class="product-tag tag-green">SOIGNÉ</span><button class="heart-btn" aria-label="Ajouter Taille de barbe aux favoris" data-fav="beard">♡</button><span class="photo-number">03</span></div>
+          <div class="product-info"><div class="product-type">BARBE · CONTOURS</div><h3>Taille de barbe</h3><p>Structure ta barbe et souligne les lignes de ton visage.</p><div class="product-bottom"><strong>1 500 <small>FCFA</small></strong><button class="add-btn" data-add="beard">+ Ajouter</button></div></div>
+        </article>
+        <article class="product-card" data-id="combo" data-name="Pack Coupe + Barbe" data-price="4000" data-category="Pack">
+          <div class="product-photo photo-combo"><span class="product-tag">BON PLAN</span><button class="heart-btn" aria-label="Ajouter Pack Coupe et Barbe aux favoris" data-fav="combo">♡</button><span class="photo-number">04</span></div>
+          <div class="product-info"><div class="product-type">PACK · LOOK COMPLET</div><h3>Pack Coupe + Barbe</h3><p>La combinaison idéale pour ressortir frais de la tête au menton.</p><div class="product-bottom"><strong>4 000 <small>FCFA</small></strong><button class="add-btn" data-add="combo">+ Ajouter</button></div></div>
+        </article>
+      </div>
+      <p class="price-note">Tarifs de démonstration à confirmer avec Fresh Barber Angré avant publication.</p>
+    </section>
+
+    <section class="booking">
+      <div class="booking-mark">FB<span>✦</span></div><div><p class="eyebrow">PRÊT POUR LE REFRESH ?</p><h2>TON PROCHAIN LOOK<br><em>COMMENCE ICI.</em></h2></div>
+      <button class="btn btn-primary" id="bookNow">Préparer ma commande <span>↗</span></button>
+    </section>
+
+    <section class="contact section-wrap" id="contact">
+      <div class="contact-main"><p class="eyebrow">PASSE NOUS VOIR</p><h2>ON SE RETROUVE<br><em>CHEZ FRESH.</em></h2><p class="contact-copy">Besoin d’un renseignement ou envie de préparer ta venue ? Écris-nous directement sur WhatsApp.</p><a class="btn btn-primary" href="https://wa.me/225544048989" target="_blank" rel="noopener">Discuter sur WhatsApp <span>↗</span></a></div>
+      <div class="contact-details"><div class="detail"><span class="detail-icon">⌖</span><div><small>ADRESSE</small><p>C229+C52, Angré<br>Abidjan, Côte d’Ivoire</p></div></div><div class="detail"><span class="detail-icon">☎</span><div><small>TÉLÉPHONE</small><p>05 44 04 89 89</p></div></div><div class="detail"><span class="detail-icon">◷</span><div><small>HORAIRES</small><p>Horaires à confirmer auprès du salon.</p></div></div><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Fresh+Barber+Angr%C3%A9+Abidjan" target="_blank" rel="noopener">Ouvrir l’itinéraire Google Maps ↗</a></div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#accueil"><span class="brand-mark">FB<span>✦</span></span><span class="brand-name">FRESH <b>BARBER</b><small>ANGRÉ · ABIDJAN</small></span></a><p>Le style au millimètre.</p><span>© <span id="year"></span> Fresh Barber Angré</span></footer>
+
+  <a class="whatsapp-float" href="https://wa.me/225544048989" target="_blank" rel="noopener" aria-label="Contacter Fresh Barber sur WhatsApp"><span class="wa-icon">◔</span><span>WhatsApp</span></a>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="side-panel" id="cartPanel" aria-labelledby="panelTitle" aria-modal="true" role="dialog" hidden>
+    <div class="panel-header"><div><p class="eyebrow">FRESH BARBER</p><h2 id="panelTitle">MON PANIER <span id="panelCount">(0)</span></h2></div><button class="close-panel" data-close aria-label="Fermer">×</button></div>
+    <div class="panel-items" id="panelItems"></div>
+    <div class="panel-footer"><div class="total-row"><span>Total estimé</span><strong id="cartTotal">0 FCFA</strong></div><button class="btn btn-primary full-btn" id="checkoutBtn">Commander sur WhatsApp ↗</button><p class="panel-small">La commande sera préparée dans WhatsApp. Aucun paiement n’est effectué sur ce site.</p></div>
+  </aside>
+
+  <aside class="side-panel" id="favPanel" aria-labelledby="favTitle" aria-modal="true" role="dialog" hidden>
+    <div class="panel-header"><div><p class="eyebrow">TES COUPS DE CŒUR</p><h2 id="favTitle">MES FAVORIS <span id="favPanelCount">(0)</span></h2></div><button class="close-panel" data-close aria-label="Fermer">×</button></div>
+    <div class="panel-items" id="favItems"></div><div class="panel-footer"><button class="btn btn-outline full-btn" data-close>Continuer à explorer</button></div>
+  </aside>
+
+  <div class="modal-wrap" id="orderModal" hidden>
+    <div class="order-modal" role="dialog" aria-modal="true" aria-labelledby="orderTitle">
+      <button class="close-panel modal-close" data-close aria-label="Fermer">×</button>
+      <p class="eyebrow">DERNIÈRE ÉTAPE</p><h2 id="orderTitle">PRÉPARE TA <em>COMMANDE.</em></h2>
+      <p class="modal-intro">Complète ces informations. WhatsApp s’ouvrira avec le récapitulatif prêt à envoyer au salon.</p>
+      <form id="orderForm">
+        <label for="customerName">Ton nom</label><input id="customerName" name="name" autocomplete="name" placeholder="Ex. : Koffi" required>
+        <label for="customerPhone">Ton numéro de téléphone</label><input id="customerPhone" name="phone" inputmode="tel" placeholder="Ex. : 07 00 00 00 00" required>
+        <label for="appointmentDate">Date souhaitée</label><input id="appointmentDate" name="date" type="date">
+        <label for="appointmentTime">Heure souhaitée</label><select id="appointmentTime" name="time"><option value="">À convenir avec le salon</option><option>09:00</option><option>10:00</option><option>11:00</option><option>12:00</option><option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option><option>18:00</option></select>
+        <label for="orderNote">Précision (facultatif)</label><textarea id="orderNote" name="note" rows="3" placeholder="Style souhaité, demande particulière…"></textarea>
+        <div class="form-total"><span>Total estimé</span><strong id="formTotal">0 FCFA</strong></div>
+        <button class="btn btn-primary full-btn" type="submit">Envoyer sur WhatsApp ↗</button>
+      </form>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
